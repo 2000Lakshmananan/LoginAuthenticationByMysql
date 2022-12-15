@@ -1,0 +1,63 @@
+<div class="body" >
+    <p style="color:red;margin-left: 510px;"><b>{{error}}</b></p>
+    <h2 style="margin-left: 600px;color: greenyellow;"><u>Signup</u></h2>
+    <form [formGroup]="form" #vv (ngSubmit)="submit(vv)" class="form">
+        <div class="fromGroup">
+            <b>Name</b><input type="text" class="form-control" formControlName="name" style="width: 300px">
+            <div *ngIf="f['name'].touched && f['name'].invalid" class="alert alert-danger"
+                style="width: 300px;font-size: 11px;text-align: center;">
+                <div *ngIf="f['name'].errors && f['name'].errors['required']" class="err">Name Can not be
+                    Empty
+                </div>
+                <div *ngIf="f['name'].errors && f['name'].errors['pattern']" class="err">Invalid Name Format
+                </div>
+            </div>
+        </div>
+        <div class="fromGroup">
+            <b>Phone Number</b><input type="text" class="form-control" formControlName="phone" style="width: 300px">
+            <div *ngIf="f['phone'].touched && f['phone'].invalid" class="alert alert-danger"
+                style="width: 300px;font-size: 11px;text-align: center;">
+                <div *ngIf="f['phone'].errors && f['phone'].errors['required']" class="err">Ph. No. Can not be
+                    Empty
+                </div>
+                <div *ngIf="f['phone'].errors && f['phone'].errors['pattern']" class="err">Invalid Phone Number
+                </div>
+            </div>
+        </div>
+        <div class="fromGroup">
+            <b>City</b><input type="text" class="form-control" formControlName="city" style="width: 300px">
+            <div *ngIf="f['city'].touched && f['city'].invalid" class="alert alert-danger"
+                style="width: 300px;font-size: 11px;text-align: center;">
+                <div *ngIf="f['city'].errors && f['city'].errors['required']" class="err">City Can not be
+                    Empty
+                </div>
+                <div *ngIf="f['city'].errors && f['city'].errors['pattern']" class="err">Invalid City Format
+                </div>
+            </div>
+        </div>
+        <div class="fromGroup">
+            <b>Password</b><input type="text" class="form-control" formControlName="pass" style="width: 300px">
+            <div *ngIf="f['pass'].touched && f['pass'].invalid" class="alert alert-danger"
+                style="width: 300px;font-size: 11px;text-align: center;">
+                <div *ngIf="f['pass'].errors && f['pass'].errors['required']" class="err">Password Can not be
+                    Empty
+                </div>
+                <div *ngIf="f['pass'].errors && f['pass'].errors['pattern']" class="err">Must have a-Z & Special Char.
+                </div>
+            </div>
+        </div>
+        <div class="fromGroup">
+            <b>Confirm Password</b><input type="text" class="form-control" formControlName="cpass" style="width: 300px">
+            <div *ngIf="f['cpass'].touched && f['cpass'].invalid" class="alert alert-danger"
+                style="width: 300px;font-size: 11px;text-align: center;">
+                <div *ngIf="f['cpass'].errors && f['cpass'].errors['required']" class="err">Confirm Pass. Can not be
+                    Empty
+                </div>
+                <div *ngIf="f['cpass'].errors && f['cpass'].errors['pattern']" class="err">Must have a-Z & Special Char.
+                </div>
+            </div>
+        </div>
+        <br>
+        <button class="sub" class="btn btn-warning" style="text-align: center;width: 250px;margin-left: 525px;">Submit!</button>
+    </form>
+</div>  

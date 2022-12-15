@@ -1,0 +1,9 @@
+.nav
+{
+    width: 100%;
+    background-color: rgb(169, 209, 13);
+}
+li
+{
+    display:inline;
+}

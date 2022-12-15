@@ -1,0 +1,14 @@
+table
+{
+    text-align: center;
+    width: 700px;
+    margin-top: 70px;
+    margin-left: 300px;
+    color: white;
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(207, 13, 13, 0.1);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border: 0px solid rgba(255, 255, 255, 1);
+}

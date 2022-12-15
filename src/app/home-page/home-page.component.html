@@ -1,0 +1,20 @@
+<table>
+    <tr style="color:rgb(162, 3, 152);font-size: 20px;">
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Password</th>
+        <th>City</th>
+    </tr>
+    <tr>
+        <td><hr style="border: 2px solid rgb(212, 199, 8);"></td>
+        <td><hr style="border: 2px solid rgb(212, 199, 8);"></td>
+        <td><hr style="border: 2px solid rgb(212, 199, 8);"></td>
+        <td><hr style="border: 2px solid rgb(212, 199, 8);"></td>
+    </tr>
+    <tr *ngFor="let i of users">
+        <td style="color:rgb(0, 255, 42)"><b>{{i.name}}</b></td>
+        <td>{{i.phone}}</td>
+        <td>{{i.password}}</td>
+        <td>{{i.address}}</td>
+    </tr>
+</table>

@@ -1,0 +1,21 @@
+<div class="form">
+    <div class="error">
+      <b>{{error}}</b>
+      <br>
+    </div>
+    <h2 style="text-align: center;color: greenyellow;"><u>Login</u></h2>
+    <br>
+    <div class="username">
+      <label><b>Phone Number</b></label>
+      <input type="text" [(ngModel)]="username">
+    </div>
+    <div class="Password">
+      <label><b>Password</b></label>
+      <input type="text" [(ngModel)]="password">
+    </div>
+    <br>
+    <div class="buton">
+      <button (click)="submit()" class="btn btn-primary" style="margin-left:180px;width:100px;">Submit</button>
+    </div>
+    <br>
+  </div>

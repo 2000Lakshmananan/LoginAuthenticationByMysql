@@ -1,0 +1,13 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    
+  <a routerLink=''><img src="https://cdn.pixabay.com/photo/2016/12/26/18/33/logo-1932539__340.png" width="100px" style="border-radius: 200px"></a>
+  <div *ngIf="ss"><p style="color: white;width:300px;">&nbsp;&nbsp;&nbsp;Hello <span style="color: red;font-size: 25px;"><b>{{name}}</b></span></p> </div>
+  <ul style="width: 600px;margin-left: 580px;max-height: 60px;">
+    <li class="nav-link" *ngIf="!ss"><button (click)="sign()" style="font-size: 15px;margin-left: 260px;" class="btn btn-warning">SignUp</button></li>
+    <li class="nav-link" *ngIf="ss"><button (click)="logout()" style="font-size: 15px;margin-left: 50px;" class="btn btn-info">Logout</button></li>
+    <li class="nav-link" *ngIf="!ss"><button (click)="log()" style="font-size: 15px;" class="btn btn-success">Login</button></li>
+  </ul>
+</nav>
+</header>
+<router-outlet></router-outlet>

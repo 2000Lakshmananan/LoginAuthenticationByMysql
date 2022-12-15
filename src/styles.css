@@ -1,0 +1,8 @@
+body
+{
+    overflow-x: hidden;
+    background-image: url(https://images.pexels.com/photos/1624256/pexels-photo-1624256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-repeat: no-repeat;  
+    /* background-size: 1300px 650px;   */
+    background-size: cover;
+}
